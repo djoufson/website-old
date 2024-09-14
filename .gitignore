@@ -5,6 +5,7 @@
 
 # secret files
 secrets/
+[Tt]ries
 
 # dotenv files
 .env
