@@ -1,5 +1,7 @@
 # My Personal Website
 
+![Website overview](./docs/screenshot.png)
+
 This is the source code for my personal website, built with modern web technologies to showcase my skills, projects, and professional journey. The website is implemented using **.NET 8 Blazor Server-Side Rendering (SSR)** and styled with **Tailwind CSS**.
 
 ## Table of Contents
