@@ -1078,6 +1078,31 @@ body {
   }
 }
 
+.animated{
+  position: relative;
+}
+
+.fade-in{
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 600ms ease-in-out, opacity 450ms ease-in-out;
+}
+
+.fade-in.triggered{
+  position: relative;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.appear{
+  opacity: 0;
+}
+
+.appear.triggered{
+  opacity: 1;
+  transition: transform 600ms ease-in-out, opacity 450ms ease-in-out;
+}
+
 .hover\:text-white-hover:hover {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
