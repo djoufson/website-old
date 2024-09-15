@@ -83,6 +83,8 @@ body{
     @apply text-white hover:text-white;
 }
 
+/* Containers */
+
 .container{
     max-width: 1200px;
 }
@@ -91,6 +93,7 @@ body{
     @apply py-14 md:py-28;
 }
 
+/* Animations */
 .animated{
     position: relative;
 }
@@ -114,4 +117,23 @@ body{
 .appear.triggered{
     opacity: 1;
     transition: transform 600ms ease-in-out, opacity 450ms ease-in-out;
+}
+
+.wave{
+    opacity: 0;
+    transition: transform 600ms ease-in-out, opacity 450ms ease-in-out;
+}
+
+.wave.triggered{
+    opacity: 1;
+    animation-name: wave;
+    animation-direction: alternate-reverse;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    animation-delay:  var(--delay);
+}
+
+@keyframes wave {
+    from{ transform: translateY(10px); }
+    to{ transform: translateY(0); }
 }

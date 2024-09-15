@@ -8,11 +8,16 @@
 
 <div>
     <!-- Hero section -->
-    <section>
-        <div class="container mx-auto flex flex-col gap-4 justify-center items-center h-[600px] p-2 md:p-4 mb-20">
-            <h1 class="heading heading-1 text-center">Hi, I'm <strong class="text-primary">Djoufson Che</strong>, a .NET Fullstack Engineer.</h1>
-            <p class="text-center md:text-2xl">Building robust applications with <strong class="text-primary font-bold">.NET</strong> while empowering the <strong class="text-primary font-bold">open-source</strong> community.</p>
-            <img src="/assets/djouf.png" alt="Djoufson Che's Avatar" class="mt-12 w-[100px] h-[100px] rounded-full">
+    <section class="relative">
+        <div class="hidden md:block absolute w-full h-full top-0 left-0">
+            <img src="/assets/dotnet.png" alt="Dotnet logo" class="hero-techno absolute w-[60px] right-[10%] top-[5%] wave [--delay:300ms]">
+            <img src="/assets/csharp.png" alt="C# logo" class="hero-techno absolute w-[60px] left-40 top-[70%] wave [--delay:200ms]">
+            <img src="/assets/blazor.png" alt="Blazor logo" class="hero-techno absolute w-[60px] left-[80%] bottom-0 wave [--delay:500ms]">
+        </div>
+        <div class="relative z-10 container mx-auto flex flex-col gap-4 justify-center items-center h-[600px] p-2 md:p-4 mb-20">
+            <h1 class="heading heading-1 text-center animated appear">Hi, I'm <strong class="text-primary">Djoufson Che</strong>, a .NET Fullstack Engineer.</h1>
+            <p class="text-center md:text-2xl animated appear" data-delay="100">Building robust applications with <strong class="text-primary font-bold">.NET</strong> while empowering the <strong class="text-primary font-bold">open-source</strong> community.</p>
+            <img src="/assets/djouf.png" alt="Djoufson Che's Avatar" class="mt-12 w-[100px] h-[100px] rounded-full animated appear" data-delay="200">
         </div>
     </section>
 
@@ -42,7 +47,7 @@
                 </div>
                 <!-- Member of the .NET Foundation -->
                 <div class="w-[350px] h-[500px] animated fade-in" data-delay="800">
-                    <img src="/assets/dotnetfoundation.png" alt=".NET Foundation logo" class="w-full h-2/3">
+                    <img src="/assets/dotnetfoundation.webp" alt=".NET Foundation logo" class="w-full h-2/3">
                     <div class="h-1/3 mt-4 flex flex-col gap-4">
                         <p class="text-white">As a proud member of the <strong class="font-bold text-white">.NET Foundation</strong>, I support the growth and collaboration of the global .NET community.</p>
                         <a href="https://dotnetfoundation.org" title=".NET Foundation website" target="_blank" class="link text-white">Visit the website</a>

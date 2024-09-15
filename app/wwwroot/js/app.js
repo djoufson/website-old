@@ -20,3 +20,11 @@ for (let i = 0; i < animatedElements.length; i++) {
     const element = animatedElements[i];
     observer.observe(element);
 }
+
+const heroTechnos = document.querySelectorAll(".hero-techno");
+for (let i = 0; i < heroTechnos.length; i++) {
+    const element = heroTechnos[i];
+    setTimeout(() => {
+        element.classList.add("triggered");
+    }, 400);
+}
